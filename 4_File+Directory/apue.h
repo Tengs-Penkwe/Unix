@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <sys/stat.h>
+#include <signal.h>
+#define MAXLINE 512
 #define exit(EXP)	return(EXP)
 #define err_sys(...) { printf(__VA_ARGS__); \
 	return -1;}
